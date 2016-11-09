@@ -14,6 +14,9 @@
 		7DC6444C1DCC0C330081E4CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DC6444A1DCC0C330081E4CD /* LaunchScreen.storyboard */; };
 		7DC6445C1DCC472B0081E4CD /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DC6445B1DCC472B0081E4CD /* CardView.xib */; };
 		7DC6445E1DCC47560081E4CD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC6445D1DCC47560081E4CD /* CardView.swift */; };
+		F3FFBD2B1DD35E5900ADDA8E /* CardAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FFBD2A1DD35E5900ADDA8E /* CardAPIClient.swift */; };
+		F3FFBD2D1DD3605900ADDA8E /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FFBD2C1DD3605900ADDA8E /* Deck.swift */; };
+		F3FFBD2F1DD3658800ADDA8E /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FFBD2E1DD3658800ADDA8E /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		7DC6444D1DCC0C330081E4CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DC6445B1DCC472B0081E4CD /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		7DC6445D1DCC47560081E4CD /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		F3FFBD2A1DD35E5900ADDA8E /* CardAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardAPIClient.swift; sourceTree = "<group>"; };
+		F3FFBD2C1DD3605900ADDA8E /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		F3FFBD2E1DD3658800ADDA8E /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 			isa = PBXGroup;
 			children = (
 				7DC644411DCC0C330081E4CD /* AppDelegate.swift */,
+				F3FFBD2A1DD35E5900ADDA8E /* CardAPIClient.swift */,
+				F3FFBD2C1DD3605900ADDA8E /* Deck.swift */,
+				F3FFBD2E1DD3658800ADDA8E /* Card.swift */,
 				7DC644431DCC0C330081E4CD /* ViewController.swift */,
 				7DC644451DCC0C330081E4CD /* Main.storyboard */,
 				7DC644481DCC0C330081E4CD /* Assets.xcassets */,
@@ -145,6 +154,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DC6445E1DCC47560081E4CD /* CardView.swift in Sources */,
+				F3FFBD2F1DD3658800ADDA8E /* Card.swift in Sources */,
+				F3FFBD2B1DD35E5900ADDA8E /* CardAPIClient.swift in Sources */,
+				F3FFBD2D1DD3605900ADDA8E /* Deck.swift in Sources */,
 				7DC644441DCC0C330081E4CD /* ViewController.swift in Sources */,
 				7DC644421DCC0C330081E4CD /* AppDelegate.swift in Sources */,
 			);

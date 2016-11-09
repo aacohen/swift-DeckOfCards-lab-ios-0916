@@ -12,6 +12,12 @@ import UIKit
 
 class CardView: UIView {
     
+    weak var card: Card! {
+        didSet {
+            updateViewToReflectNewCard()
+        }
+    }
+    
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var imageView: UIImageView!
     
@@ -45,8 +51,16 @@ extension CardView {
     
     fileprivate func updateViewToReflectNewCard() {
         
+        if self.card.image == nil {
+            guard let unwrappedURL = card.url else { return }
+           CardAPIClient.shared.downloadImage(at: unwrappedURL, completion: { (true, image) in
+            self.card.image = image
+           })
+        } else { print("error in updateViewToReflect") }
         // TODO: Update the view accordingly
-        
+       //look at card stored property - have an image that not's nil?' if it's nil then we haven't downloaded image yet.
+        // if cards. image property is nil then call then call on download image and then you'll hve an image. 
+        //once have image - imageview.image  = that image.
     }
 
 }
@@ -58,6 +72,8 @@ extension CardView {
      func setupGestureRecognizer() {
         
         // TODO: Setup Pan Gesture Recognizer
+        // should be added to self.(current instance of card view. 
+        //add end . self.add pangesture.
         
         
         
@@ -66,7 +82,7 @@ extension CardView {
      func viewMoved(_ gesture: UIPanGestureRecognizer) {
         
         // TODO: Update self.center to reflect the new center
-        
+        //update self's  center . the new center we should find the through pan gesture
     }
     
 }
